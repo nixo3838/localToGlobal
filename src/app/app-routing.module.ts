@@ -7,7 +7,6 @@ import { PlansComponent } from './GuestComponents/plans/plans.component';
 import { SignupComponent } from './GuestComponents/signup/signup.component';
 import { BuyPlansComponent } from './UserComponents/buy-plans/buy-plans.component';
 import { DashboardComponent } from './UserComponents/dashboard/dashboard.component';
-import { HeaderComponent } from './UserComponents/header/header.component';
 import { SupportComponent } from './UserComponents/support/support.component';
 import { TunnelAndSubscriptionComponent } from './UserComponents/tunnel-and-subscription/tunnel-and-subscription.component';
 
@@ -49,11 +48,6 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent,
-        title: '',
-      },
-      {
-        path: 'header',
-        component: HeaderComponent,
         title: '',
       },
       {
