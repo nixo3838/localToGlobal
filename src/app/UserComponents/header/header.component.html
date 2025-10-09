@@ -1,0 +1,60 @@
+<header class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+            <span class="text-xl font-bold text-gray-900">.Fixed</span>
+            <span class="text-xl font-bold text-blue-600">IP</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Dashboard</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Buy Plans & Report</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Tunnel & Subscription</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Support</a>
+        </nav>
+
+        <!-- User Avatar & Hamburger for Mobile -->
+        <div class="flex items-center space-x-4">
+            <!-- Desktop Avatar -->
+            <button class="hidden md:block p-1 rounded-full hover:bg-gray-100">
+                <img src="https://i.pravatar.cc/40" alt="User Avatar" class="w-8 h-8 rounded-full">
+            </button>
+
+            <!-- Hamburger -->
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden peer" />
+                <label for="menu-toggle" class="p-2 rounded-md hover:bg-gray-100 cursor-pointer flex items-center">
+                    <!-- Hamburger icon -->
+                    <svg class="w-6 h-6 text-gray-700 peer-checked:hidden" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- Close icon -->
+                    <svg class="w-6 h-6 text-gray-700 hidden peer-checked:block" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="hidden peer-checked:flex flex-col md:hidden px-6 pb-4 space-y-2 bg-white border-t border-gray-200">
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Dashboard</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Buy Plans & Report</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Tunnel & Subscription</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Support</a>
+        <!-- Mobile Avatar -->
+        <div class="pt-2 border-t border-gray-200 mt-2">
+            <button class="p-1 rounded-full hover:bg-gray-100 flex items-center">
+                <img src="https://i.pravatar.cc/40" alt="User Avatar" class="w-8 h-8 rounded-full mr-2">
+                <span class="text-gray-700 font-medium">Profile</span>
+            </button>
+        </div>
+    </nav>
+</header>

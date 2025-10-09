@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-div {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    border-radius: 8px;
+    color: #888;
+    font-size: 16px;
+}
+
+.form-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+.form-section h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #1b1b1b;
+}
+
+.form-section p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+a {
+    color: #3366cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #002d9c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #001a6e;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #999;
+    font-size: 14px;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+    top: 50%;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+}
+
+.btn-google:hover {
+    background-color: #f7f7f7;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.links a {
+    margin-left: 5px;
+}
