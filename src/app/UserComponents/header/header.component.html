@@ -9,10 +9,9 @@
 
         <!-- Desktop Menu -->
         <nav class="hidden md:flex space-x-8">
-            <a href="user/dashboard" class="text-gray-700 hover:text-blue-600 font-medium">Dashboard</a>
-            <a href="user/buy-plans" class="text-gray-700 hover:text-blue-600 font-medium">Buy Plans & Report</a>
-            <a href="user/tunnel-and-subscription" class="text-gray-700 hover:text-blue-600 font-medium">Tunnel & Subscription</a>
-            <a href="user/support" class="text-gray-700 hover:text-blue-600 font-medium">Support</a>
+            <a [routerLink]="['user/' + route.path]" *ngFor="let route of routes" class="text-gray-700 hover:text-blue-600 font-medium">
+                {{route.name}}
+            </a>
         </nav>
 
         <!-- User Avatar & Hamburger for Mobile -->

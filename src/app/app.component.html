@@ -1,9 +1,7 @@
-<app-header></app-header>
-<app-user-header></app-user-header>
+<app-header *ngIf="isGuest()"></app-header>
+<app-user-header *ngIf="isUser()"></app-user-header>
 
 
 
 
 <router-outlet></router-outlet>
-
-

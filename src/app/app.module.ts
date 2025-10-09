@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { GlobalHeaderInterceptor } from './services/Auth/global-header.interceptor';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './UserComponents/dashboard/dashboard.component';
-import {  UserHeaderComponent } from './UserComponents/header/header.component';
+import { UserHeaderComponent } from './UserComponents/header/header.component';
 import { BuyPlansComponent } from './UserComponents/buy-plans/buy-plans.component';
 import { SupportComponent } from './UserComponents/support/support.component';
 import { TunnelAndSubscriptionComponent } from './UserComponents/tunnel-and-subscription/tunnel-and-subscription.component';
@@ -32,9 +36,20 @@ import { HeaderComponent } from './GuestComponents/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    CommonModule,
+    RouterModule.forRoot([]),
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: GlobalHeaderInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
