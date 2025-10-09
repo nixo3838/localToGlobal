@@ -9,6 +9,9 @@ import { BuyPlansComponent } from './UserComponents/buy-plans/buy-plans.componen
 import { DashboardComponent } from './UserComponents/dashboard/dashboard.component';
 import { SupportComponent } from './UserComponents/support/support.component';
 import { TunnelAndSubscriptionComponent } from './UserComponents/tunnel-and-subscription/tunnel-and-subscription.component';
+import { ProfileComponent } from './UserComponents/profile/profile.component';
+import { ForgotPasswordComponent } from './GuestComponents/forgot-password/forgot-password.component';
+import { ResendActivationLinkComponent } from './GuestComponents/resend-activation-link/resend-activation-link.component';
 
 const routes: Routes = [
   {
@@ -24,6 +27,16 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+    title: '',
+  },
+  {
+    path: 'forget-password',
+    component: ForgotPasswordComponent,
+    title: '',
+  },
+  {
+    path: 'resend-activation-link',
+    component: ResendActivationLinkComponent,
     title: '',
   },
   {
@@ -58,6 +71,11 @@ const routes: Routes = [
       {
         path: 'tunnel-and-subscription',
         component: TunnelAndSubscriptionComponent,
+        title: '',
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent,
         title: '',
       },
     ]
