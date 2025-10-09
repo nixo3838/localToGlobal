@@ -1,58 +1,38 @@
-<div class="bg-gray-50 flex items-center justify-center min-h-screen p-6">
-    <div class="flex flex-col lg:flex-row items-center justify-center gap-12 w-full max-w-6xl">
-        <div class="flex-shrink-0">
-            <img class="h-80" src="assets/svgFiles/support.svg" alt="">
-        </div>
-        <div class="bg-white rounded-lg shadow-sm p-8 w-full max-w-lg">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-900 mb-2">
-                        Full Name
-                    </label>
-                    <input type="text" value="Nixo"
-                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-900 mb-2">
-                        Mobile No.
-                    </label>
-                    <input type="text" value="9876543210"
-                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                </div>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-900 mb-2">
-                        Email
-                    </label>
-                    <input type="email" value="nixo3838pvt@gmail.com"
-                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-900 mb-2">
-                        Subject
-                    </label>
-                    <input type="text" placeholder="Subject"
-                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                </div>
-            </div>
-            <div class="mb-6">
-                <label class="block text-sm font-medium text-gray-900 mb-2">
-                    Message
-                </label>
-                <textarea placeholder="Message" rows="4"
-                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
-            </div>
-            <div class="flex gap-3">
-                <button
-                    class="px-6 py-2 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 transition-colors">
-                    Submit
-                </button>
-                <button
-                    class="px-6 py-2 bg-gray-500 text-white font-medium rounded hover:bg-gray-600 transition-colors">
-                    Cancel
-                </button>
-            </div>
-        </div>
+<div class="bg-[#85BBE6] min-h-screen flex items-center justify-center p-6">
+  <div class="flex flex-col lg:flex-row items-center justify-center gap-12 w-full max-w-6xl">
+    <div class="flex-shrink-0 lg:w-1/2 flex justify-center">
+      <img class="h-80 w-full object-contain" src="assets/svgFiles/support.svg" alt="Support Illustration">
     </div>
+    <div class="bg-white rounded-xl shadow-xl p-10 w-full lg:w-1/2 border border-gray-200">
+      <h2 class="text-3xl font-bold text-slate-700 mb-6 text-center">Contact Support</h2>
+      <p class="text-slate-600 text-center mb-8">
+        Have questions or need help? Fill out the form below and our team will get back to you promptly.</p>
+      <form class="space-y-5">
+        <div class="flex flex-col sm:flex-row gap-4">
+          <input type="text" value="" placeholder="Full Name"
+            class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77B3E3] text-slate-700 placeholder-slate-400">
+          <input type="text" value="" placeholder="Mobile No."
+            class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77B3E3] text-slate-700 placeholder-slate-400">
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <input type="email" value="" placeholder="Email"
+            class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77B3E3] text-slate-700 placeholder-slate-400" >
+          <input type="text" placeholder="Subject"
+            class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77B3E3] text-slate-700 placeholder-slate-400" >
+        </div>
+        <textarea placeholder="Message" rows="5"
+          class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77B3E3] text-slate-700 placeholder-slate-400 resize-none"></textarea>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-2">
+          <button type="submit"
+            class="flex-1 px-6 py-3 bg-[#77B3E3] text-white font-medium rounded-lg shadow hover:bg-blue-500 transition-colors">
+            Submit
+          </button>
+          <button type="reset"
+            class="flex-1 px-6 py-3 bg-gray-300 text-slate-700 font-medium rounded-lg shadow hover:bg-gray-400 transition-colors">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
