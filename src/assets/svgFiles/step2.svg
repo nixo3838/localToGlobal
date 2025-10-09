@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 185 71" style="enable-background:new 0 0 185 71;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#0168FA;}
+	.st1{opacity:0.45;fill-rule:evenodd;clip-rule:evenodd;fill:#DFE6EA;}
+	.st2{fill:none;stroke:#FDFDFF;stroke-width:1.35;stroke-linecap:round;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:1.35;stroke-linecap:round;}
+</style>
+<desc>Created with Sketch.</desc>
+<rect id="Rectangle" class="st0" width="185" height="71"/>
+<g id="Group-12" transform="translate(11.000000, 0.000000)">
+	<g id="Group-16" transform="translate(0.500000, 0.000000)">
+		<g id="Group-9" transform="translate(0.000000, 0.135900)">
+		</g>
+		<path id="Fill-7" class="st1" d="M113.3,26.3C109.4,11.5,96.1,1,80.6,1c-10.2,0-20,4.7-26.4,12.7c-1.9-0.4-3.9-0.6-5.8-0.6
+			c-15.4,0-27.8,12.5-27.8,28c0,15.4,12.5,28,27.8,28h70.5c11.9,0,21.6-9.7,21.6-21.7s-9.7-21.7-21.6-21.7
+			C117,25.6,115.1,25.8,113.3,26.3z"/>
+	</g>
+	<g id="Group-24" transform="translate(107.000000, 47.000000)">
+		<line id="Stroke-4" class="st2" x1="38.9" y1="-2.5" x2="2.9" y2="-2.6"/>
+		<polyline id="Stroke-6" class="st2" points="8,4.4 1,-2.7 8.2,-10 		"/>
+	</g>
+	
+		<g id="Group-24_1_" transform="translate(34.000000, 54.500000) rotate(-180.000000) translate(-34.000000, -54.500000) translate(15.000000, 47.000000)">
+		<line id="Stroke-4_1_" class="st2" x1="36.8" y1="17.9" x2="0.8" y2="17.4"/>
+		<polyline id="Stroke-6_1_" class="st2" points="6,24.4 -1,17.3 6.2,10 		"/>
+	</g>
+</g>
+<path id="Stroke-12" class="st3" d="M169.3,54.4c0-0.5,0.3-0.8,0.8-0.8h6.4c0.5,0,0.8,0.4,0.8,0.8H169.3z M164.5,37h17.7
+	c0.8,0,1.4,0.7,1.4,1.5v10.9c0,0.8-0.6,1.5-1.4,1.5h-17.7c-0.8,0-1.5-0.7-1.5-1.5V38.5C163,37.7,163.6,37,164.5,37z"/>
+<path id="Stroke-12_1_" class="st3" d="M7.3,54.4c0-0.5,0.3-0.8,0.8-0.8h6.4c0.5,0,0.8,0.4,0.8,0.8H7.3z M2.5,37h17.7
+	c0.8,0,1.4,0.7,1.4,1.5v10.9c0,0.8-0.6,1.5-1.4,1.5H2.5c-0.8,0-1.5-0.7-1.5-1.5V38.5C1,37.7,1.6,37,2.5,37z"/>
+</svg>
