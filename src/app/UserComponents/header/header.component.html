@@ -8,7 +8,8 @@
 
     <!-- Desktop Menu -->
     <nav class="hidden md:flex space-x-8">
-      <a [routerLink]="['user/' + route.path]" *ngFor="let route of routes" class="text-gray-700 hover:text-blue-600 font-medium">
+      <a [routerLink]="['user/' + route.path]" *ngFor="let route of routes"
+        class="text-gray-700 hover:text-blue-600 font-medium">
         {{route.name}}
       </a>
     </nav>
@@ -17,7 +18,7 @@
     <div class="relative md:block hidden">
       <!-- Hidden Checkbox for toggle -->
       <input type="checkbox" id="profile-toggle" class="hidden peer" />
-      
+
       <!-- Profile Button -->
       <label for="profile-toggle" class="flex items-center p-1 rounded-full hover:bg-gray-100 cursor-pointer">
         <img src="https://i.pravatar.cc/40" alt="User Avatar" class="w-8 h-8 rounded-full">
@@ -25,12 +26,10 @@
 
       <!-- Dropdown Menu -->
       <div
-        class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 scale-95 transform origin-top-right transition-all duration-200 peer-checked:opacity-100 peer-checked:scale-100 pointer-events-none peer-checked:pointer-events-auto"
-      >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a>
+        class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 scale-95 transform origin-top-right transition-all duration-200 peer-checked:opacity-100 peer-checked:scale-100 pointer-events-none peer-checked:pointer-events-auto">
+        <a [routerLink]="['profile']" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
         <div class="border-t border-gray-200"></div>
-        <a href="#" class="block px-4 py-2 text-red-600 hover:bg-red-50">Logout</a>
+        <button class="block px-4 py-2 text-red-600 hover:bg-red-50 w-full" (click)="logout()">Logout</button>
       </div>
     </div>
 
@@ -38,15 +37,12 @@
     <div class="md:hidden">
       <input type="checkbox" id="menu-toggle" class="hidden peer" />
       <label for="menu-toggle" class="p-2 rounded-md hover:bg-gray-100 cursor-pointer flex items-center">
-        <svg class="w-6 h-6 text-gray-700 peer-checked:hidden" fill="none" stroke="currentColor"
-             viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
+        <svg class="w-6 h-6 text-gray-700 peer-checked:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
         <svg class="w-6 h-6 text-gray-700 hidden peer-checked:block" fill="none" stroke="currentColor"
-             viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M6 18L18 6M6 6l12 12" />
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </label>
     </div>
@@ -55,25 +51,24 @@
 
   <!-- Mobile Menu -->
   <nav class="hidden peer-checked:flex flex-col md:hidden px-6 pb-4 space-y-2 bg-white border-t border-gray-200">
-    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Dashboard</a>
-    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Buy Plans & Report</a>
-    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Tunnel & Subscription</a>
-    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Support</a>
+    <a [routerLink]="['user/' + route.path]" *ngFor="let route of routes"
+      class="text-gray-700 hover:text-blue-600 font-medium">
+      {{route.name}}
+    </a>
 
     <!-- Mobile Profile Dropdown -->
     <div class="pt-2 border-t border-gray-200 mt-2 relative">
       <input type="checkbox" id="mobile-profile-toggle" class="hidden peer" />
-      <label for="mobile-profile-toggle" class="flex items-center w-full p-2 rounded-md hover:bg-gray-100 cursor-pointer">
+      <label for="mobile-profile-toggle"
+        class="flex items-center w-full p-2 rounded-md hover:bg-gray-100 cursor-pointer">
         <img src="https://i.pravatar.cc/40" alt="User Avatar" class="w-8 h-8 rounded-full mr-2">
         <span class="text-gray-700 font-medium">Profile</span>
       </label>
       <div
-        class="absolute left-0 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 scale-95 transform origin-top transition-all duration-200 peer-checked:opacity-100 peer-checked:scale-100 pointer-events-none peer-checked:pointer-events-auto z-10"
-      >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a>
+        class="absolute left-0 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 scale-95 transform origin-top transition-all duration-200 peer-checked:opacity-100 peer-checked:scale-100 pointer-events-none peer-checked:pointer-events-auto z-10">
+        <a [routerLink]="['profile']" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
         <div class="border-t border-gray-200"></div>
-        <a href="#" class="block px-4 py-2 text-red-600 hover:bg-red-50">Logout</a>
+        <button class="block px-4 py-2 text-red-600 hover:bg-red-50 w-full" (click)="logout()">Logout</button>
       </div>
     </div>
   </nav>

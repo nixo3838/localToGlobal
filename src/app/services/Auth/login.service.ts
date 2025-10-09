@@ -17,4 +17,16 @@ export class LoginService {
     return this.http.post(`${this.apiUrl}login`, data);
   }
 
+  createAccount(data: any) {
+    return this.http.post(`${this.apiUrl}signUp`, data);
+  }
+
+  forgetPassword(data: any) {
+    return this.http.post(`${this.apiUrl}forget-password`, data);
+  }
+
+  resendActivationLink(data: any) {
+    return this.http.post(`${this.apiUrl}resendActivationLink`, data);
+  }
+
 }
