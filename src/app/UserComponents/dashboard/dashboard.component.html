@@ -1,160 +1,336 @@
 <div class="min-h-screen bg-gray-50">
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
-            <div>
-                <div class="text-sm text-gray-500 mb-1">
-                    <span>DASHBOARD</span> / <span class="text-blue-600">FIXEDIP</span>
-                </div>
-                <h1 class="text-2xl font-bold text-gray-900">Welcome to Dashboard</h1>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div
+      class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6"
+    >
+      <div>
+        <h1 class="text-2xl font-bold text-gray-900">Welcome to Dashboard</h1>
+      </div>
+    </div>
+   <div class="relative overflow-hidden bg-[#77B3E3] text-white rounded-2xl shadow-lg mb-16">
+  <div class="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
+
+  <div class="relative flex flex-col lg:flex-row items-center gap-12 px-8 py-16">
+    <!-- Left Illustration -->
+    <div class="flex-shrink-0 order-2 lg:order-1 w-72 h-72 flex items-center justify-center">
+      <img
+        src="assets/svgFiles/quality_check_flatline.svg"
+        alt="Domain Search Illustration"
+        class="drop-shadow-xl animate-float"
+      />
+    </div>
+
+    <!-- Right Content -->
+    <div class="flex-1 order-1 lg:order-2 text-center lg:text-left">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-slate-700">
+        Find the <span class="text-yellow-400">Perfect Domain</span><br />
+        That Defines Your Brand
+      </h1>
+      <p class="text-base md:text-lg  mb-8 max-w-xl mx-auto lg:mx-0 text-slate-700">
+        Secure your online identity in seconds. Search millions of available domain names, choose the one that fits your brand, and take your presence from <span class="font-semibold">localtoglobal</span> today.
+      </p>
+
+      <!-- Search Bar -->
+      <div class="flex flex-col sm:flex-row justify-center lg:justify-start mb-4">
+  <!-- Editable Input -->
+  <input
+    type="text"
+    placeholder="Search your domain name..."
+    class="flex-1 px-5 py-3 border-r-0 rounded-l-lg outline-none bg-[#A5CBE9]  text-gray-900 border  focus:outline-none  placeholder-gray-500"
+  />
+
+  <!-- Fixed Domain Input -->
+  <input
+    type="text"
+    value=".localtoglobal.in"
+    disabled
+    class="px-5 py-3 text-gray-900  font-semibold border  rounded-r-lg "
+  />
+
+  <!-- Search Button -->
+  <button
+    class="px-8 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow hover:bg-yellow-300 hover:scale-[1.02] transition-transform sm:ml-3 mt-3 sm:mt-0"
+  >
+    Search
+  </button>
+</div>
+
+
+      <!-- Tips -->
+      <ul class="text-sm text-slate-700 space-y-1 text-left max-w-lg mx-auto lg:mx-0">
+        <li>• Choose a short and memorable domain name</li>
+        <li>• Try creative alternatives if your first choice is taken</li>
+        <li>• Go global with the perfect online identity</li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+        Here are 3 simple steps to set up localtoglobal
+      </h2>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- CARD 1 -->
+        <div class="flip-card bg-transparent w-full h-[480px]">
+          <div class="flip-inner rounded-xl shadow-sm">
+            <!-- FRONT -->
+            <div
+              class="flip-front bg-white rounded-xl shadow-sm p-8 flex flex-col items-center justify-center"
+            >
+              <img
+                src="assets/svgFiles/PIN..svg"
+                alt=""
+                class="w-48 h-48 mb-4"
+              />
+              <div class="text-[#77B3E3] font-bold text-8xl mb-2">1</div>
+              <h3 class="text-xl font-bold text-gray-900 text-center mb-2">
+                Download the Software
+              </h3>
+              <p class="text-sm text-slate-800 text-center">
+                Choose your version below and start your setup.
+              </p>
             </div>
-            
+
+            <!-- BACK -->
+            <div
+              class="flip-back bg-[#77B3E3] rounded-xl text-white p-8 flex flex-col items-center justify-center"
+            >
+              <h3 class="text-xl text-slate-800 font-bold mb-3">Select OS & Download</h3>
+              <p class="text-sm mb-4 text-slate-800 text-center">
+                Please select the file according to your operating system and
+                click to download the correct version.
+              </p>
+              <div class="flex flex-wrap gap-2 justify-center">
+                <button
+                  class="px-4 py-2 bg-white  text-slate-800 text-sm rounded hover:bg-purple-100 transition"
+                >
+                  Windows-64 bit
+                </button>
+                <button
+                  class="px-4 py-2 bg-white text-slate-800 text-sm rounded hover:bg-purple-100 transition"
+                >
+                  Windows-32 bit
+                </button>
+                <button
+                  class="px-4 py-2 bg-white  text-slate-800 text-sm rounded hover:bg-purple-100 transition"
+                >
+                  Linux-64 bit
+                </button>
+                <button
+                  class="px-4 py-2 bg-white text-slate-800 text-sm rounded hover:bg-purple-100 transition"
+                >
+                  Linux-32 bit
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bg-white rounded-lg shadow-sm p-8 mb-8">
-            <div class="flex flex-col lg:flex-row items-center gap-8">
-                <div class="flex-shrink-0">
-                    <div class="w-64 h-64 flex items-center justify-center">
-                        <img src="assets/svgFiles/quality_check_flatline.svg" alt="">
-                    </div>
-                </div>
-                <div class="flex-1 w-full">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Find Your Perfect Domain</h2>
-                    <div class="flex flex-col sm:flex-row gap-2 mb-4">
-                        <input type="text" placeholder="Search your Domain Name..."
-                            class="flex-1 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <input type="text" placeholder=".fixedip.in"
-                            class="w-full sm:w-32 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <button
-                            class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Search</button>
-                    </div>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Search unique domain name</li>
-                        <li>• Search for short words that you can remember easily</li>
-                        <li>• Search the alternative domain name if the searched domain name is not found</li>
-                    </ul>
-                </div>
+
+        <!-- CARD 2 -->
+        <div class="flip-card bg-transparent w-full h-[480px]">
+          <div class="flip-inner rounded-xl shadow-sm">
+            <!-- FRONT -->
+            <div
+              class="flip-front bg-white rounded-xl shadow-sm p-8 flex flex-col items-center justify-center"
+            >
+              <img
+                src="assets/svgFiles/PUZZLE.svg"
+                alt=""
+                class="w-48 h-48 mb-4"
+              />
+              <div class="text-[#77B3E3] font-bold text-8xl mb-2">2</div>
+              <h3 class="text-xl font-bold text-gray-900 text-center mb-2">
+                Add the Config File
+              </h3>
+              <p class="text-sm  text-slate-800 text-center">
+                Prepare your configuration file for your selected domain.
+              </p>
             </div>
+
+            <!-- BACK -->
+            <div
+              class="flip-back bg-[#77B3E3] rounded-xl text-white p-8 flex flex-col items-center justify-center"
+            >
+              <h3 class="text-xl text-slate-800 font-bold mb-3">Download Config File</h3>
+              <p class="text-sm  text-slate-800 mb-4 text-center">
+                Download the config.ini file for your domain, then move or copy
+                it into your extracted setup folder to activate your
+                configuration.
+              </p>
+              <div class="flex w-full mt-20 flex-col sm:flex-col gap-2">
+                <select
+                  class="px-4 py-2 border border-white bg-[#77B3E3] rounded text-white focus:outline-none"
+                >
+                  <option>Select Domain</option>
+                </select>
+                <button
+                  class="px-6 py-2 bg-white text-slate-800 rounded hover:bg-purple-100 transition"
+                >
+                  Download Config File
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-8">Here is a 3 simple step to setup FIXEDIP</h2>
-            <div class="bg-white rounded-lg shadow-sm p-8 mb-8">
-                <div class="flex flex-col lg:flex-row items-center gap-8">
-                    <div class="flex-shrink-0">
-                        <div class="w-64 h-64 flex items-center justify-center">
-                            <img src="assets/svgFiles/PIN..svg" alt="">
-                        </div>
-                    </div>
-                    <div class="flex-1">
-                        <div class="text-blue-600 font-bold text-lg mb-2">STEP 1</div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">First of all, download software from here
-                        </h3>
-                        <p class="text-sm text-gray-500 mb-4">
-                            please select the download file with appropriate OS.<br>
-                            click here for download.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <button
-                                class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition-colors">Window-64
-                                bit</button>
-                            <button
-                                class="px-4 py-2 bg-white text-blue-600 text-sm border border-blue-600 rounded hover:bg-blue-50 transition-colors">Window-32
-                                bit</button>
-                            <button
-                                class="px-4 py-2 bg-white text-blue-600 text-sm border border-blue-600 rounded hover:bg-blue-50 transition-colors">Linux-64
-                                bit</button>
-                            <button
-                                class="px-4 py-2 bg-white text-blue-600 text-sm border border-blue-600 rounded hover:bg-blue-50 transition-colors">Linux-32
-                                bit</button>
-                        </div>
-                    </div>
-                </div>
+
+        <!-- CARD 3 -->
+        <div class="flip-card bg-transparent w-full h-[480px]">
+          <div class="flip-inner rounded-xl shadow-sm">
+            <!-- FRONT -->
+            <div
+              class="flip-front bg-white rounded-xl shadow-sm p-8 flex flex-col items-center justify-center"
+            >
+              <img
+                src="assets/svgFiles/ROCKET.svg"
+                alt=""
+                class="w-48 h-48 mb-4"
+              />
+              <div class="text-[#77B3E3] font-bold text-8xl mb-2">3</div>
+              <h3 class="text-xl font-bold text-gray-900 text-center mb-2">
+                Start and Go Online
+              </h3>
+              <p class="text-sm  text-slate-800 text-center">
+                Run the setup file to launch your project online.
+              </p>
             </div>
-            <div class="bg-white rounded-lg shadow-sm p-8 mb-8">
-                <div class="flex flex-col lg:flex-row items-center gap-8">
-                    <div class="flex-1 order-2 lg:order-1">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">
-                            Select your domain, download the config file and add that file to default file folder
-                        </h3>
-                        <p class="text-sm text-gray-500 mb-4">
-                            download the config.ini file and put in extracted folder
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-2">
-                            <select
-                                class="px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <option>Select</option>
-                            </select>
-                            <button
-                                class="px-6 py-2 bg-white text-blue-600 border border-blue-600 rounded hover:bg-blue-50 transition-colors">
-                                Download Config File
-                            </button>
-                        </div>
-                    </div>
-                    <div class="flex-shrink-0 order-1 lg:order-2">
-                        <div class="w-64 h-64 flex items-center justify-center">
-                            <img src="assets/svgFiles/PUZZLE.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+
+            <!-- BACK -->
+            <div
+              class="flip-back bg-[#77B3E3] rounded-xl text-white p-8 flex flex-col items-center justify-center"
+            >
+              <h3 class="text-xl text-slate-800 font-bold mb-3">Run the Application</h3>
+              <p class="text-sm mb-4 text-slate-800 text-center">
+                Open your downloaded folder, run <strong>run.bat</strong>, and
+                go online instantly. Still unsure? Watch our localtoglobal setup
+                tutorial below for a complete walkthrough.
+              </p>
+              <a href="#" class="underline text-white hover:text-purple-200"
+                >Watch Tutorial</a
+              >
             </div>
-            <div class="bg-white rounded-lg shadow-sm p-8 mb-8">
-                <div class="flex flex-col lg:flex-row items-center gap-8">
-                    <div class="flex-shrink-0">
-                        <div class="w-64 h-64 flex items-center justify-center">
-                            <img src="assets/svgFiles/ROCKET.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="flex-1">
-                        <div class="text-blue-600 font-bold text-lg mb-2">STEP 3</div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">
-                            DONE !!! Start run.bat in downloaded folder and go online.
-                        </h3>
-                        <p class="text-sm text-gray-500">
-                            if you still confused ? watch fixedip setup video tutorial that given below.
-                        </p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="bg-white rounded-lg shadow-sm p-8">
-            <h3 class="text-lg font-bold text-gray-900 mb-6">VIDEO TUTORIAL</h3>
-            <div class="space-y-4">
-                <div class="flex items-start gap-4 p-4 border border-gray-200 rounded">
-                    <div class="flex-shrink-0 w-16 h-16 bg-blue-600 rounded flex items-center justify-center">
-                        <svg viewBox="0 0 24 24" fill="white" class="w-8 h-8">
-                            <polygon points="8,5 8,19 19,12"></polygon>
-                        </svg>
-                    </div>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-gray-900 mb-1">FixedIP - Local to Internet</h4>
-                        <p class="text-sm text-gray-600 mb-1">How it's Work ?</p>
-                        <a href="#" class="text-sm text-blue-600 hover:underline">Watch on Youtube</a>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4 p-4 border border-gray-200 rounded">
-                    <div class="flex-shrink-0 w-16 h-16 bg-blue-600 rounded flex items-center justify-center">
-                        <svg viewBox="0 0 24 24" fill="white" class="w-8 h-8">
-                            <polygon points="8,5 8,19 19,12"></polygon>
-                        </svg>
-                    </div>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-gray-900 mb-1">FixedIP - Domain Registration</h4>
-                        <p class="text-sm text-gray-600 mb-1">How to Registration Domain</p>
-                        <a href="#" class="text-sm text-blue-600 hover:underline">Watch on Youtube</a>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4 p-4 border border-gray-200 rounded">
-                    <div class="flex-shrink-0 w-16 h-16 bg-blue-600 rounded flex items-center justify-center">
-                        <svg viewBox="0 0 24 24" fill="white" class="w-8 h-8">
-                            <polygon points="8,5 8,19 19,12"></polygon>
-                        </svg>
-                    </div>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-gray-900 mb-1">FixedIP - Installation</h4>
-                        <p class="text-sm text-gray-600 mb-1">How to Install FixedIP on Server and Local Computer ?
-                        </p>
-                        <a href="#" class="text-sm text-blue-600 hover:underline">Watch on Youtube</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+   <div class="bg-white rounded-lg shadow-sm p-8">
+  <h3 class="text-lg font-bold text-gray-900 mb-6">VIDEO TUTORIAL</h3>
+
+ 
+
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Card 1 -->
+    <div
+      class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+    >
+      <!-- Thumbnail Section -->
+      <div class="relative h-48 w-full overflow-hidden">
+        <img
+          src="assets/images/FIXEDIP_GB.jpg"
+          alt="localtoglobal - Local to Internet"
+          class="object-cover h-full w-full transform hover:scale-105 transition duration-300"
+        />
+        <!-- Play Icon Overlay -->
+        <div
+          class="absolute inset-0 bg-black/30 flex items-center justify-center transition hover:bg-black/40"
+        >
+          <div
+            class="w-16 h-16 bg-[#77B3E3] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
+          >
+            <svg viewBox="0 0 24 24" fill="white" class="w-10 h-10">
+              <polygon points="8,5 8,19 19,12"></polygon>
+            </svg>
+          </div>
         </div>
-    </main>
+      </div>
+
+      <!-- Text Section -->
+      <div class="p-5 text-center">
+        <h4 class="font-bold text-gray-900 mb-1">
+          localtoglobal - Local to Internet
+        </h4>
+        <p class="text-sm  text-slate-800 mb-3">How it Works?</p>
+        <a
+          href="#"
+          class="inline-block text-sm font-medium  text-slate-800 hover:underline"
+          >Watch on YouTube</a
+        >
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div
+      class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+    >
+      <div class="relative h-48 w-full overflow-hidden">
+        <img
+          src="assets/images/FIXEDIP_GB.jpg"
+          alt="localtoglobal - Domain Registration"
+          class="object-cover h-full w-full transform hover:scale-105 transition duration-300"
+        />
+        <div
+          class="absolute inset-0 bg-black/30 flex items-center justify-center transition hover:bg-black/40"
+        >
+          <div
+            class="w-16 h-16 bg-[#77B3E3] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
+          >
+            <svg viewBox="0 0 24 24" fill="white" class="w-10 h-10">
+              <polygon points="8,5 8,19 19,12"></polygon>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 text-center">
+        <h4 class="font-bold text-gray-900 mb-1">
+          localtoglobal - Domain Registration
+        </h4>
+        <p class="text-sm  text-slate-800 mb-3">How to Register a Domain?</p>
+        <a
+          href="#"
+          class="inline-block text-sm font-medium  text-slate-800 hover:underline"
+          >Watch on YouTube</a
+        >
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div
+      class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+    >
+      <div class="relative h-48 w-full overflow-hidden">
+        <img
+          src="assets/images/FIXEDIP_GB.jpg"
+          alt="localtoglobal - Installation"
+          class="object-cover h-full w-full transform hover:scale-105 transition duration-300"
+        />
+        <div
+          class="absolute inset-0 bg-black/30 flex items-center justify-center transition hover:bg-black/40"
+        >
+          <div
+            class="w-16 h-16 bg-[#77B3E3] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
+          >
+            <svg viewBox="0 0 24 24" fill="white" class="w-10 h-10">
+              <polygon points="8,5 8,19 19,12"></polygon>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 text-center">
+        <h4 class="font-bold text-gray-900 mb-1">
+          localtoglobal - Installation
+        </h4>
+        <p class="text-sm  text-slate-800 mb-3">How to Install localtoglobal?</p>
+        <a
+          href="#"
+          class="inline-block text-sm font-medium  text-slate-800 hover:underline"
+          >Watch on YouTube</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
 </div>
