@@ -4,18 +4,19 @@
             <h2>Create New Account</h2>
             <p>It's free to signup and only takes a minute.</p>
 
-            <form>
+            <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your Name" />
+                <input type="text" placeholder="Enter your Name" formControlName="name" />
 
                 <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="Enter your email address" />
+                <input type="email" placeholder="Enter your email address" formControlName="email" />
 
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" />
+                <input type="password" placeholder="Enter your password" formControlName="password" />
 
                 <label for="mobile">Mobile No</label>
-                <input type="tel" id="mobile" placeholder="Enter your mobile no" />
+                <input type="number" placeholder="Enter your mobile no" formControlName="mobileNumber" />
 
                 <p class="terms">
                     By clicking <strong>Create an account</strong> below, you agree to our terms of service and privacy
@@ -24,15 +25,10 @@
 
                 <button type="submit" class="primary-btn">Create Account</button>
 
-                <div class="divider">
-                    <span></span> OR <span></span>
-                </div>
-
-                <button type="button" class="google-btn">Sign Up with Google</button>
             </form>
 
             <p class="signin-text">
-                Already have an account?<a href="/login.html">Sign In</a>
+                Already have an account?<a [routerLink]="['login']"> Sign In</a>
             </p>
         </div>
 

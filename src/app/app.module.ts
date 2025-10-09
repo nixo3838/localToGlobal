@@ -18,6 +18,10 @@ import { ContactComponent } from './GuestComponents/contact/contact.component';
 import { PlansComponent } from './GuestComponents/plans/plans.component';
 import { LoginComponent } from './GuestComponents/login/login.component';
 import { HeaderComponent } from './GuestComponents/header/header.component';
+import { ProfileComponent } from './UserComponents/profile/profile.component';
+import { ForgotPasswordComponent } from './GuestComponents/forgot-password/forgot-password.component';
+import { ResendActivationLinkComponent } from './GuestComponents/resend-activation-link/resend-activation-link.component';
+import { FooterComponent } from './GuestComponents/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,10 @@ import { HeaderComponent } from './GuestComponents/header/header.component';
     ContactComponent,
     PlansComponent,
     UserHeaderComponent,
+    ProfileComponent,
+    ForgotPasswordComponent,
+    ResendActivationLinkComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
