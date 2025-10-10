@@ -8,6 +8,7 @@ import { SupportService } from 'src/app/services/user/support.service';
   templateUrl: './support.component.html',
   styleUrls: ['./support.component.scss']
 })
+
 export class SupportComponent {
 
 

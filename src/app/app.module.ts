@@ -21,7 +21,11 @@ import { HeaderComponent } from './GuestComponents/header/header.component';
 import { ProfileComponent } from './UserComponents/profile/profile.component';
 import { ForgotPasswordComponent } from './GuestComponents/forgot-password/forgot-password.component';
 import { ResendActivationLinkComponent } from './GuestComponents/resend-activation-link/resend-activation-link.component';
-import { FooterComponent } from './GuestComponents/footer/footer.component';
+import { FooterComponent } from './Shared/footer/footer.component';
+import { PageSpinnerComponent } from './Shared/page-spinner/page-spinner.component';
+import { PrimeNgToastComponent } from './Shared/prime-ng-toast/prime-ng-toast.component';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,8 @@ import { FooterComponent } from './GuestComponents/footer/footer.component';
     ForgotPasswordComponent,
     ResendActivationLinkComponent,
     FooterComponent,
+    PrimeNgToastComponent,
+    PageSpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,15 +56,18 @@ import { FooterComponent } from './GuestComponents/footer/footer.component';
     FormsModule,
     CommonModule,
     RouterModule.forRoot([]),
+    ToastModule,
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: GlobalHeaderInterceptor,
-      multi: true,
+      multi: true
     },
+    MessageService,
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule {}
+
+export class AppModule { }
