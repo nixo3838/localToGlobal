@@ -13,7 +13,19 @@
   .flip-card:hover .flip-inner {
     transform: rotateY(180deg);
   }
-
+ @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.2s ease-out;
+  }
   .flip-front,
   .flip-back {
     position: absolute;
@@ -21,7 +33,21 @@
     height: 100%;
     backface-visibility: hidden;
   }
-
+ .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #85BBE6;
+    border-radius: 4px;
+    border: 2px solid #f1f1f1;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #5a9ad4;
+  }
   .flip-back {
     transform: rotateY(180deg);
   }
