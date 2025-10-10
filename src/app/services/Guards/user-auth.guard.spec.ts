@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { UserAuthGuard } from './user-auth.guard';
-import { AuthService } from '../Authentication/auth.service';
+import { AuthService } from '../Auth/auth.service';
 
 describe('UserAuthGuard', () => {
   let guard: UserAuthGuard;

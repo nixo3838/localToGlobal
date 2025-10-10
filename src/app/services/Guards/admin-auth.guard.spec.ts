@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { AdminAuthGuard } from './admin-auth.guard';
-import { AuthService } from '../Authentication/auth.service';
+import { AuthService } from '../Auth/auth.service';
 
 describe('AdminAuthGuard', () => {
   let guard: AdminAuthGuard;
