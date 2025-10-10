@@ -29,12 +29,11 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: #555;
 }
 
-/* Override PrimeNG Toast CSS */
-.p-toast {
-    width: auto !important;
-    max-width: 95vw;
-}
+// .p-toast {
+//     width: auto !important;
+//     max-width: 95vw;
+// }
 
-.p-toast .p-toast-message .p-toast-icon-close {
-    margin: auto !important;
-}
+// .p-toast .p-toast-message .p-toast-icon-close {
+//     margin: auto !important;
+// }

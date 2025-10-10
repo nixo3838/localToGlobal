@@ -8,20 +8,4 @@ import { Component } from '@angular/core';
 
 export class PrimeNgToastComponent {
 
-  // constructor(
-  //   private messageService: MessageService,
-  // ) { }
-
-
-  // showToast(severity: string, summary: string, detail: string, life: number) {
-  //   this.messageService.add({
-  //     severity,
-  //     summary,
-  //     detail,
-  //     life,
-  //     data: {
-  //       duration: life
-  //     }  // Pass duration to the toast template
-  //   });
-  // }
 }

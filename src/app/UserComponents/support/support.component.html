@@ -12,7 +12,7 @@
         <div class="flex flex-col sm:flex-row gap-4">
           <input type="text" placeholder="Full Name"
             class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77B3E3] text-slate-700 placeholder-slate-400"
-            formControlName="name">
+            formControlName="fullname">
           <input type="text" placeholder="Mobile No."
             class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77B3E3] text-slate-700 placeholder-slate-400"
             formControlName="mobileNumber">
@@ -29,8 +29,9 @@
           class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77B3E3] text-slate-700 placeholder-slate-400 resize-none"
           formControlName="message"></textarea>
 
-        <button type="submit" [disabled]="supportForm.invalid"
-          class="px-6 py-3 bg-[#77B3E3] text-white font-medium rounded-lg shadow hover:bg-blue-500 transition-colors mt-2 w-full">
+        <button type="submit" [disabled]="supportForm.invalid" [ngClass]="{
+          'hover:bg-blue-500' : !supportForm.invalid
+        }" class="px-6 py-3 bg-[#77B3E3] text-white font-medium rounded-lg shadow transition-colors mt-2 w-full">
           Submit
         </button>
       </form>
