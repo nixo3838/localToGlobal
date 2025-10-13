@@ -14,7 +14,7 @@ export class SupportService {
   ) { }
 
   sendSupoport(data: any) {
-    return this.http.post(`${this.apiUrl}sendSuppprtReport`, data);
+    return this.http.post(`${this.apiUrl}get_support`, data);
   }
 
 }

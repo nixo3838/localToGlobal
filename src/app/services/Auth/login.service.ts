@@ -18,7 +18,7 @@ export class LoginService {
   }
 
   createAccount(data: any) {
-    return this.http.post(`${this.apiUrl}signUp`, data);
+    return this.http.post(`${this.apiUrl}register`, data);
   }
 
   forgetPassword(data: any) {
