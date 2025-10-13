@@ -9,55 +9,65 @@
     </div>
 
     <!-- Tables Container -->
-    <div class="flex flex-col lg:flex-row gap-6">
-      
-      <!-- Tunnel List -->
-      <div class="flex-1 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 overflow-x-auto">
-        <h2 class="text-lg font-bold text-blue-700 mb-4">Tunnel List</h2>
-        <table class="w-full">
-          <thead>
-            <tr class="border-b border-gray-200">
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">#</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">Tunnel Name</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">Subscribe Under</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">SubDomain</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">Local Port</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td colspan="6" class="text-center py-8 text-gray-500 text-sm">
-                No tunnels available
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+   <div class="flex flex-col lg:flex-row gap-6">
 
-      <!-- Subscription List -->
-      <div class="flex-1 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 overflow-x-auto">
-        <h2 class="text-lg font-bold text-blue-700 mb-4">Subscription List</h2>
-        <table class="w-full">
-          <thead>
-            <tr class="border-b border-gray-200">
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">#</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">Plan</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">Tunnel Count</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">Expire Date</th>
-              <th class="text-left py-3 px-4 text-sm font-medium text-gray-900">Purchase Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td colspan="5" class="text-center py-8 text-gray-500 text-sm">
-                No subscriptions available
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
+  <!-- Tunnel List -->
+  <div class="flex-1 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 overflow-x-auto">
+    <h2 class="text-lg font-bold text-blue-700 mb-4">Tunnel List</h2>
+    <div class="max-h-[600px] overflow-y-auto border border-gray-200 rounded-lg shadow-sm">
+      <table class="w-full border-collapse text-center">
+        <thead class="bg-blue-100 sticky top-0 z-10">
+          <tr>
+            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">#</th>
+            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Plan</th>
+            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Tunnel Count</th>
+            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Expire Date</th>
+            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Purchase Date</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-700">
+          <tr class="even:bg-gray-50 hover:bg-gray-100 transition-colors">
+            <td class="py-4 px-2">1</td>
+            <td class="py-4 px-2">Starter</td>
+            <td class="py-4 px-2">1</td>
+            <td class="py-4 px-2">28/10/2025</td>
+            <td class="py-4 px-2">10/10/2025</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
+
+  <!-- Subscription List -->
+  <div class="flex-1 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 overflow-x-auto">
+    <h2 class="text-lg font-bold text-blue-700 mb-4">Subscription List</h2>
+    <div class="overflow-x-auto">
+      <div class="max-h-[600px] overflow-y-auto border border-gray-200 rounded-lg shadow-sm">
+        <table class="w-full border-collapse text-center">
+          <thead class="bg-blue-100 sticky top-0 z-10">
+            <tr>
+              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">#</th>
+              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Plan</th>
+              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Tunnel Count</th>
+              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Expire Date</th>
+              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Purchase Date</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="even:bg-gray-50 hover:bg-gray-100 transition-colors">
+              <td class="py-4 px-2">1</td>
+              <td class="py-4 px-2">Starter</td>
+              <td class="py-4 px-2">1</td>
+              <td class="py-4 px-2">28/10/2025</td>
+              <td class="py-4 px-2">10/10/2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+
   </div>
 </div>

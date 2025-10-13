@@ -1,16 +1,16 @@
-<header class="bg-white border-b border-gray-200">
+<header class="bg-white border-b border-gray-200 relative z-50">
   <div class="px-6 lg:px-8 flex justify-between items-center h-16">
-
-    <!-- Logo -->
     <div class="flex items-center">
       <span class="text-xl font-bold text-gray-900">LocalToGlobal</span>
     </div>
-
-    <!-- Desktop Menu -->
     <nav class="hidden md:flex space-x-8">
-      <a [routerLink]="['user/' + route.path]" *ngFor="let route of routes"
-        class="text-gray-700 hover:text-blue-600 font-medium">
-        {{route.name}}
+      <a
+        [routerLink]="['user/' + route.path]"
+        *ngFor="let route of routes"
+       
+        class="text-gray-700 hover:text-blue-600 font-medium transition"
+      >
+        {{ route.name }}
       </a>
     </nav>
 
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <!-- Hamburger for Mobile -->
+    <!-- Mobile Hamburger -->
     <div class="md:hidden">
       <input type="checkbox" id="menu-toggle" class="hidden peer" />
       <label for="menu-toggle" class="p-2 rounded-md hover:bg-gray-100 cursor-pointer flex items-center">
@@ -46,7 +46,6 @@
         </svg>
       </label>
     </div>
-
   </div>
 
   <!-- Mobile Menu -->
