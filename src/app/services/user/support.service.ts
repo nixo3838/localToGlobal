@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SupportService {
 
-  apiUrl = environment.apiUrl;
+  apiUrl = environment.apiUrl1;
 
   constructor(
     private http: HttpClient

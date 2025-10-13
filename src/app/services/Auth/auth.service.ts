@@ -18,7 +18,7 @@ export class AuthService {
 
   private userRole: string | null = null; // Example: 'admin' or 'user'
   private isAuthenticated: boolean = false;
-  apiUrl = environment.apiUrl;
+  apiUrl = environment.apiUrl1;
 
   constructor(
     private http: HttpClient,

@@ -6,7 +6,7 @@ import { initFlowbite } from 'flowbite';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
 })
-export class ProfileComponent implements AfterViewInit {
+export class ProfileComponent {
 
   ngAfterViewInit() {
     // Initialize Flowbite modal, dropdown, etc after Angular renders DOM
