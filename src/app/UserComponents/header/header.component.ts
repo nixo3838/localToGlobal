@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/Auth/auth.service';
+import { ToastManagerService } from 'src/app/services/Shared/toast-manager.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -35,7 +36,8 @@ export class UserHeaderComponent {
 
   constructor(
     private authService: AuthService,
-    private router: Router
+    private router: Router,
+    private toastService: ToastManagerService
   ) { }
 
   logout() {
@@ -61,6 +63,10 @@ export class UserHeaderComponent {
           }
         }
       );
+  }
+
+  viewToast() {
+    this.toastService.showToast('error', '', 'This is my toast Pleasse correct me for my bad design. I am idiot.', 5000);
   }
 
 

@@ -1,7 +1,25 @@
+<app-prime-ng-toast></app-prime-ng-toast>
+<app-page-spinner *ngIf="isLoading"></app-page-spinner>
+
+
+
 <app-header *ngIf="isGuest()"></app-header>
 <app-user-header *ngIf="isUser()"></app-user-header>
 
 
 
 
+
+
+
+
 <router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+<app-footer></app-footer>

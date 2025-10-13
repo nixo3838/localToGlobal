@@ -9,11 +9,17 @@ import { AuthService } from './services/Auth/auth.service';
 export class AppComponent {
 
   title = 'localToGlobal';
-
+  isLoading = true;
 
   constructor(
     private authService: AuthService
   ) { }
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1500);
+  }
 
   isUser(): boolean {
     return this.authService.isUser();

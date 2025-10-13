@@ -15,9 +15,29 @@ import { ResendActivationLinkComponent } from './GuestComponents/resend-activati
 
 const routes: Routes = [
   {
-    path: 'login',
-    component: LoginComponent,
-    title: 'Login',
+    path: '',
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent,
+        title: 'Login',
+      },
+      {
+        path: 'signup',
+        component: SignupComponent,
+        title: ' Create Account ',
+      },
+      {
+        path: 'forget-password',
+        component: ForgotPasswordComponent,
+        title: 'Forget Password',
+      },
+      {
+        path: 'resend-activation-link',
+        component: ResendActivationLinkComponent,
+        title: 'Resend Activation Link',
+      },
+    ]
   },
   {
     path: 'home',
@@ -27,56 +47,41 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
-    title: '',
-  },
-  {
-    path: 'forget-password',
-    component: ForgotPasswordComponent,
-    title: '',
-  },
-  {
-    path: 'resend-activation-link',
-    component: ResendActivationLinkComponent,
-    title: '',
+    title: 'Contact',
   },
   {
     path: 'plans',
     component: PlansComponent,
-    title: '',
-  },
-  {
-    path: 'signup',
-    component: SignupComponent,
-    title: '',
+    title: 'Plans',
   },
   {
     path: 'user',
-    title: '',
+    title: 'User',
     children: [
       {
         path: 'buy-plans',
         component: BuyPlansComponent,
-        title: '',
+        title: 'Buy Plans',
       },
       {
         path: 'dashboard',
         component: DashboardComponent,
-        title: '',
+        title: 'Dashboard',
       },
       {
         path: 'support',
         component: SupportComponent,
-        title: '',
+        title: 'Support',
       },
       {
         path: 'tunnel-and-subscription',
         component: TunnelAndSubscriptionComponent,
-        title: '',
+        title: 'Tunnel And Subscription',
       },
       {
         path: 'profile',
         component: ProfileComponent,
-        title: '',
+        title: 'Profile',
       },
     ]
   },
