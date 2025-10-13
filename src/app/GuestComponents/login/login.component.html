@@ -1,27 +1,85 @@
 <div class="body-div">
-    <div class="container">
-        <div class="image-section">
-            <img src="assets/svgFiles/login.svg" alt="">
-        </div>
-        <div class="form-section">
-            <h2>Sign In</h2>
-            <p>Welcome back! Please sign in to continue.</p>
-            <form [formGroup]="loginForm" (ngSubmit)="verifyLogin()">
-                <label>Email address</label>
-                <input type="email" placeholder="yourname@yourmail.com" formControlName="email" />
-
-                <label>Password</label>
-                <input type="password" placeholder="Enter your password" formControlName="password" />
-
-                <div style="text-align:right; margin-top:-10px; margin-bottom:15px;">
-                    <a [routerLink]="['/forget-password']">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn-primary">Sign In</button>
-            </form>
-            <div class="links">
-                <p>Don't have an account? <a [routerLink]="['/signup']">Create an Account</a></p>
-                <p>Are you want resend email? <a [routerLink]="['/resend-activation-link']">Resend Activation Link</a></p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="image-section">
+      <img src="assets/svgFiles/login.svg" alt="" />
     </div>
+    <div class="form-section">
+      <h2>Sign In</h2>
+      <p>Welcome back! Please sign in to continue.</p>
+      <form [formGroup]="loginForm" (ngSubmit)="verifyLogin()">
+        <label>Email address</label>
+        <input
+          type="email"
+          placeholder="yourname@yourmail.com"
+          formControlName="email"
+        />
+
+        <label>Password</label>
+       <div class="relative">
+         <input
+          type="password"
+          placeholder="Enter your password"
+          formControlName="password"
+        />
+        <div class="flex items-center gap-2 absolute right-3 bottom-7">
+        <!-- Eye Open -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-eye-icon lucide-eye"
+>
+  <path
+    d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+  />
+  <circle cx="12" cy="12" r="3" />
+</svg>
+
+<!-- Eye Closed -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-eye-closed-icon lucide-eye-closed hidden"
+>
+  <path d="m15 18-.722-3.25" />
+  <path d="M2 8a10.645 10.645 0 0 0 20 0" />
+  <path d="m20 15-1.726-2.05" />
+  <path d="m4 15 1.726-2.05" />
+  <path d="m9 18 .722-3.25" />
+</svg>
+
+        </div>
+       </div>
+        <div style="text-align: right; margin-top: -10px; margin-bottom: 15px">
+          <a [routerLink]="['/forget-password']">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn-primary">Sign In</button>
+      </form>
+      <div class="links">
+        <p>
+          Don't have an account?
+          <a [routerLink]="['/signup']">Create an Account</a>
+        </p>
+        <p>
+          Are you want resend email?
+          <a [routerLink]="['/resend-activation-link']"
+            >Resend Activation Link</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
 </div>

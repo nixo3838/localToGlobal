@@ -1,1 +1,44 @@
-<!-- <p>header works!</p> -->
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Left: Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <span class="ml-2 font-bold text-xl text-gray-900">Localtoglobal</span>
+        </div>
+
+        <!-- Middle: Navigation Links -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Plan</a>
+        </nav>
+
+        <!-- Right: Login / Sign Up -->
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Login</a>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium transition-colors">Sign Up</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-1">
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Plan</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Login</a>
+      <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium transition-colors">Sign Up</a>
+    </div>
+  </header>
