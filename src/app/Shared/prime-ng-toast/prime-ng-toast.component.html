@@ -1,6 +1,6 @@
 <p-toast position="bottom-right">
     <ng-template let-message pTemplate="message">
-        <div class="p-toast-message p-3 p-toast-message-{{message.severity}} border-0 shadow-none mb-0 bg-red-600">
+        <div class="p-toast-message p-3 p-toast-message-{{message.severity}} border-0 shadow-none mb-0">
             <!-- style="min-width: 22rem;"> -->
             <div class="p-toast-message-content p-0">
                 <span class="p-toast-summary">{{message.summary}}</span>
@@ -10,10 +10,10 @@
                 <div class="p-toast-progress" [ngStyle]="{
                         'animation-duration': (message.data?.duration || 3000) + 'ms'
                       }" [ngClass]="{
-                        'bg-success' : message.severity == 'success',
-                        'bg-info' : message.severity == 'info',
-                        'bg-warning' : message.severity == 'warn',
-                        'bg-danger' : message.severity == 'error'
+                        'bg-[#28a745]' : message.severity == 'success',
+                        'bg-indigo-400' : message.severity == 'info',
+                        'bg-yellow-600' : message.severity == 'warn',
+                        'bg-red-500' : message.severity == 'error'
                       }">
                 </div>
             </div>

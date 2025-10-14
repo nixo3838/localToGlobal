@@ -65,9 +65,4 @@ export class UserHeaderComponent {
       );
   }
 
-  viewToast() {
-    this.toastService.showToast('error', '', 'This is my toast Pleasse correct me for my bad design. I am idiot.', 5000);
-  }
-
-
 }
