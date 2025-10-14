@@ -1,0 +1,17 @@
+/* hide default marker */
+      details summary::-webkit-details-marker { display: none; }
+      details summary::marker { display: none; }
+
+      /* rotate the icon when opened */
+      details[open] summary .icon { transform: rotate(45deg); }
+
+      /* smooth transitions */
+      summary .icon,
+      details .answer { transition: all .2s ease; }
+
+      /* optional fade animation for content */
+      @keyframes fa {
+        from { opacity: 0; transform: translateY(-4px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      details[open] .answer { animation: fa .18s ease forwards; }

@@ -1,81 +1,134 @@
 <div class="bg-gray-50 text-gray-900 p-8 min-h-screen">
   <div>
     <!-- Header -->
-    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
+    <div
+      class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8"
+    >
       <div>
         <h1 class="text-4xl font-bold text-gray-900">Tunnel & Subscription</h1>
-        <p class="text-slate-700 font-bold text-md mt-1">Manage all your tunnels and subscriptions in one place.</p>
+        <p class="text-slate-700 font-bold text-md mt-1">
+          Manage all your tunnels and subscriptions in one place.
+        </p>
       </div>
     </div>
 
     <!-- Tables Container -->
-   <div class="flex flex-col lg:flex-row gap-6">
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Tunnel List -->
+      <div
+        class="flex-1 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 overflow-x-auto"
+      >
+        <h2 class="text-lg font-bold text-blue-700 mb-4">Tunnel List</h2>
+        <div
+          class="max-h-[600px] overflow-y-auto border border-gray-200 rounded-lg shadow-sm"
+        >
+          <table class="w-full border-collapse text-center">
+            <thead class="bg-blue-100 sticky top-0 z-10">
+              <tr>
+                <th
+                  class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                >
+                  #
+                </th>
+                <th
+                  class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                >
+                  Plan
+                </th>
+                <th
+                  class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                >
+                  Tunnel Count
+                </th>
+                <th
+                  class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                >
+                  Expire Date
+                </th>
+                <th
+                  class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                >
+                  Purchase Date
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700">
+              <tr class="even:bg-gray-50 hover:bg-gray-100 transition-colors">
+                <td class="py-4 px-2">11</td>
+                <td class="py-4 px-2">Starter</td>
+                <td class="py-4 px-2">1</td>
+                <td class="py-4 px-2">28/10/2025</td>
+                <td class="py-4 px-2">10/10/2025</td>
+              </tr>
+            </tbody>
+          </table>
+          <div
+            class="flex flex-col items-center justify-center py-12 text-gray-500"
+          >
+            <i class="fa-solid fa-receipt text-5xl mb-4"></i>
+            <p class="text-sm">No transactions found yet.</p>
+          </div>
+        </div>
+      </div>
 
-  <!-- Tunnel List -->
-  <div class="flex-1 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 overflow-x-auto">
-    <h2 class="text-lg font-bold text-blue-700 mb-4">Tunnel List</h2>
-    <div class="max-h-[600px] overflow-y-auto border border-gray-200 rounded-lg shadow-sm">
-      <table class="w-full border-collapse text-center">
-        <thead class="bg-blue-100 sticky top-0 z-10">
-          <tr>
-            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">#</th>
-            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Plan</th>
-            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Tunnel Count</th>
-            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Expire Date</th>
-            <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Purchase Date</th>
-          </tr>
-        </thead>
-        <tbody class="text-gray-700">
-          <tr class="even:bg-gray-50 hover:bg-gray-100 transition-colors">
-            <td class="py-4 px-2">1</td>
-            <td class="py-4 px-2">Starter</td>
-            <td class="py-4 px-2">1</td>
-            <td class="py-4 px-2">28/10/2025</td>
-            <td class="py-4 px-2">10/10/2025</td>
-          </tr>
-        </tbody>
-      </table>
-        <div class="flex flex-col items-center justify-center py-12 text-gray-500">
-        <i class="fa-solid fa-receipt text-5xl mb-4"></i>
-        <p class="text-sm">No transactions found yet.</p>
+      <!-- Subscription List -->
+      <div
+        class="flex-1 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 overflow-x-auto"
+      >
+        <h2 class="text-lg font-bold text-blue-700 mb-4">Subscription List</h2>
+        <div class="overflow-x-auto">
+          <div
+            class="max-h-[600px] overflow-y-auto border border-gray-200 rounded-lg shadow-sm"
+          >
+            <table class="w-full border-collapse text-center">
+              <thead class="bg-blue-100 sticky top-0 z-10">
+                <tr>
+                  <th
+                    class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                  >
+                    #
+                  </th>
+                  <th
+                    class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                  >
+                    Plan
+                  </th>
+                  <th
+                    class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                  >
+                    Tunnel Count
+                  </th>
+                  <th
+                    class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                  >
+                    Expire Date
+                  </th>
+                  <th
+                    class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200"
+                  >
+                    Purchase Date
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="even:bg-gray-50 hover:bg-gray-100 transition-colors">
+                  <td class="py-4 px-2">1</td>
+                  <td class="py-4 px-2">Starter</td>
+                  <td class="py-4 px-2">1</td>
+                  <td class="py-4 px-2">28/10/2025</td>
+                  <td class="py-4 px-2">10/10/2025</td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="flex flex-col items-center justify-center py-12 text-gray-500"
+            >
+              <i class="fa-solid fa-receipt text-5xl mb-4"></i>
+              <p class="text-sm">No transactions found yet.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- Subscription List -->
-  <div class="flex-1 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 overflow-x-auto">
-    <h2 class="text-lg font-bold text-blue-700 mb-4">Subscription List</h2>
-    <div class="overflow-x-auto">
-      <div class="max-h-[600px] overflow-y-auto border border-gray-200 rounded-lg shadow-sm">
-        <table class="w-full border-collapse text-center">
-          <thead class="bg-blue-100 sticky top-0 z-10">
-            <tr>
-              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">#</th>
-              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Plan</th>
-              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Tunnel Count</th>
-              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Expire Date</th>
-              <th class="py-3 px-4 text-sm font-semibold text-gray-900 border-b border-gray-200">Purchase Date</th>
-            </tr>
-          </thead>
-          <tbody class="text-gray-700">
-            <tr class="even:bg-gray-50 hover:bg-gray-100 transition-colors">
-              <td class="py-4 px-2">1</td>
-              <td class="py-4 px-2">Starter</td>
-              <td class="py-4 px-2">1</td>
-              <td class="py-4 px-2">28/10/2025</td>
-              <td class="py-4 px-2">10/10/2025</td>
-            </tr>
-          </tbody>
-        </table>
-          <div class="flex flex-col items-center justify-center py-12 text-gray-500">
-        <i class="fa-solid fa-receipt text-5xl mb-4"></i>
-        <p class="text-sm">No transactions found yet.</p>
-      </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
   </div>
 </div>
