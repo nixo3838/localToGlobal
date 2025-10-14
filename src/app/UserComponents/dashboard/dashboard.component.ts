@@ -10,7 +10,9 @@ import { DashboardService } from 'src/app/services/user/dashboard.service';
 export class DashboardComponent {
 
   subDomainName: string = '';
-  subDomainList: any;
+  subDomainData: any;
+  domainAddress = '.localtoglobal.in';
+  planDetails: any;
 
 
 
@@ -20,13 +22,15 @@ export class DashboardComponent {
   ) { }
 
   searchSubDomain() {
+    this.planDetails = null;
+    
     const data = {
       subdomain: this.subDomainName
     };
 
     this.dashboardService.searchSubDomain(data).subscribe(
       (res: any) => {
-        this.subDomainList = res.data;
+        this.subDomainData = res;
       },
       (err: any) => {
         const errorMessage = err.error.message;
@@ -35,6 +39,12 @@ export class DashboardComponent {
     );
   }
 
+  planDetailFind(event: Event) {
+    const selectElement = event.target as HTMLSelectElement;
+    const selectedValue = selectElement.value;
+
+    this.planDetails = this.subDomainData.data.planNameList.find((item: any) => item._id == selectedValue);
+  }
 
 
 
