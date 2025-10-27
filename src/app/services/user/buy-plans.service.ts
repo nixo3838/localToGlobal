@@ -22,4 +22,12 @@ export class BuyPlansService {
     return this.http.get(`${this.apiUrl4}show_plans`);
   }
 
+  planPayment(id: string) {
+    return this.http.post(`${this.apiUrl5}payment-plan/${id}`, {});
+  }
+
+  paymentCallBackPlan(data: any) {
+    return this.http.post(`${this.apiUrl5}payment_callback_plan`, data);
+  }
+
 }

@@ -41,7 +41,7 @@
               <div class="text-4xl md:text-2xl font-extrabold text-gray-900">
                 &#x20B9; {{data?.amount}}
               </div>
-              <button
+              <button (click)="clickedOnBuyPlans(data?._id)"
                 class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
                 Buy Now
               </button>
