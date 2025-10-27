@@ -16,5 +16,9 @@ export class DashboardService {
   searchSubDomain(data: any) {
     return this.http.post(`${this.apiUrl}search_subdomain`, data);
   }
+  
+  createTunnel(data: any) {
+    return this.http.post(`${this.apiUrl}create_tunnel`, data);
+  }
 
 }

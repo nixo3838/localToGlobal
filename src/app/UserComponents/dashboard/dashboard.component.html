@@ -74,6 +74,7 @@
             </h1>
             <div class="overflow-y-auto pr-2 custom-scrollbar" style="max-height: 250px">
               <!-- Card with form -->
+
               <div
                 class="flex flex-col md:flex-row items-center gap-3 w-full bg-white border border-gray-200 rounded-lg px-4 py-4 shadow-sm hover:shadow-md transition">
                 <div class="flex-1">
@@ -83,32 +84,45 @@
                   <div class="flex items-center gap-2 mt-1">
                     <i class="fa-solid fa-certificate text-yellow-500"></i>
                     <span class="text-xs text-gray-700" [ngClass]="{
-                      'text-red-600' : !subDomainData.data.subdomainAvailability ,
-                      'text-green-700' : subDomainData.data.subdomainAvailability,
+                      'text-red-600' : !subDomainData?.data?.subdomainAvailability ,
+                      'text-green-700' : subDomainData?.data?.subdomainAvailability,
                     }">
                       {{ subDomainData.message }}
                     </span>
                   </div>
                 </div>
 
-                <input type="text" placeholder="Enter LocalHost"
-                  class="px-3 py-2 text-black border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-400 text-sm w-full md:w-64" />
+                <form [formGroup]="createTunnelForm" (ngSubmit)="createTunnel()" *ngIf="!isSubDomainAvailable"
+                  class="flex flex-col md:flex-row items-center gap-3 w-full ">
 
-                <select
-                  class="px-3 py-2 border border-gray-300 rounded bg-white text-black text-sm focus:outline-none focus:ring-1 focus:ring-blue-400"
-                  (change)="planDetailFind($event)">
-                  <option value="null" selected>
-                    Plans
-                  </option>
-                  <option *ngFor="let plan of subDomainData.data.planNameList" [value]="plan._id">
-                    {{ plan.planName }}
-                  </option>
-                </select>
+                  <input type="text" placeholder="Enter LocalHost" formControlName="localhost"
+                    class="px-3 py-2 text-black border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-400 text-sm w-full md:w-64" />
 
-                <button
-                  class="px-4 py-2 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 transition w-full md:w-auto">
-                  Create Tunnel
-                </button>
+                  <select formControlName="planId"
+                    class="px-3 py-2 border border-gray-300 rounded bg-white text-black text-sm focus:outline-none focus:ring-1 focus:ring-blue-400">
+                    <option value="null">
+                      Plans
+                    </option>
+                    <option *ngFor="let plan of subDomainData?.data?.planNameList" [value]="plan?._id">
+                      {{ plan?.planName }}
+                    </option>
+                  </select>
+
+                  <button *ngIf="planDetails?.used" (click)="goToBuyPlanPage()" type="button"
+                    class="px-4 py-2 bg-blue-600 text-white font-medium rounded transition w-full md:w-auto">
+                    Buy Plan
+                  </button>
+
+                  <button [disabled]="createTunnelForm.invalid" *ngIf="!planDetails?.used"
+                    class="px-4 py-2 text-white font-medium rounded transition w-full md:w-auto" [ngClass]="{
+                      'bg-blue-600 hover:bg-blue-700' : createTunnelForm.valid,
+                      'bg-blue-400' : createTunnelForm.invalid,
+                    }">
+                    Create Tunnel
+                  </button>
+
+                </form>
+
               </div>
 
               <!-- Transaction info row -->

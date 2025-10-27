@@ -1,8 +1,6 @@
 <div class="bg-gray-50 min-h-screen flex items-center justify-center p-6">
   <div class="w-full max-w-7xl">
-    <div
-      class="flex flex-col sm:flex-row justify-between mt-16 items-start sm:items-center mb-12"
-    >
+    <div class="flex flex-col sm:flex-row justify-between mt-16 items-start sm:items-center mb-12">
       <div>
         <h1 class="text-4xl font-extrabold text-gray-900 mb-2">
           Buy New Plans & Purchase Report
@@ -13,156 +11,45 @@
         </p>
       </div>
     </div>
- 
+
     <div class="py-8 max-w-7xl mx-auto px-6">
-<div class="mb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-  <div class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
-    <i class="fa-solid fa-user text-blue-600 text-[60px] flex-shrink-0"></i>
-    <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-      <div class="text-center md:text-left space-y-2">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Starter</h2>
-        <p class="text-gray-700 font-medium">Custom Subdomain, 1 Online Tunnel, <br> 10 connections/min</p>
-        <p class="text-gray-700 font-medium">For 28 days</p>
-        <p class="text-blue-600 font-medium">1 tunnel available</p>
-        <p class="text-gray-500 font-medium">4,999 API calls</p>
+
+      <div class="mb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+
+        <div *ngFor="let data of plansList;"
+          class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
+          <i class="fa-solid fa-user text-blue-600 text-[60px] flex-shrink-0" *ngIf="data?.icon == ''"></i>
+          <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
+            <div class="text-center md:text-left space-y-2">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+                {{data?.planName}}
+              </h2>
+              <p class="text-gray-700 font-medium">
+                Custom Subdomain, {{data?.activeTunnel}} Online Tunnel, <br> {{data?.connections}} connections/min
+              </p>
+              <p class="text-gray-700 font-medium">
+                For {{data?.forDay}} days
+              </p>
+              <p class="text-blue-600 font-medium">
+                {{data?.avilableTunnel}} tunnel available
+              </p>
+              <p class="text-gray-500 font-medium">
+                {{data?.apiCalls}} API calls
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
+              <div class="text-4xl md:text-2xl font-extrabold text-gray-900">
+                &#x20B9; {{data?.amount}}
+              </div>
+              <button
+                class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
-        <div class="text-4xl md:text-2xl font-extrabold text-gray-900">₹ 499.00</div>
-        <button class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
-          Buy Now
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
-    <i class="fa-solid fa-rocket text-yellow-500 text-[60px] flex-shrink-0"></i>
-   <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-      <div class="text-center md:text-left space-y-2">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Starter</h2>
-        <p class="text-gray-700 font-medium">Custom Subdomain, 1 Online Tunnel, <br> 10 connections/min</p>
-        <p class="text-gray-700 font-medium">For 28 days</p>
-        <p class="text-blue-600 font-medium">1 tunnel available</p>
-        <p class="text-gray-500 font-medium">4,999 API calls</p>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
-        <div class="text-4xl md:text-2xl font-extrabold text-gray-900">₹ 499.00</div>
-        <button class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
-          Buy Now
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
-    <i class="fa-solid fa-building text-green-600 text-[60px] flex-shrink-0"></i>
-    <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-      <div class="text-center md:text-left space-y-2">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Starter</h2>
-        <p class="text-gray-700 font-medium">Custom Subdomain, 1 Online Tunnel, <br> 10 connections/min</p>
-        <p class="text-gray-700 font-medium">For 28 days</p>
-        <p class="text-blue-600 font-medium">1 tunnel available</p>
-        <p class="text-gray-500 font-medium">4,999 API calls</p>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
-        <div class="text-4xl md:text-2xl font-extrabold text-gray-900">₹ 499.00</div>
-        <button class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
-          Buy Now
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
-    <i class="fa-solid fa-briefcase text-purple-600 text-[60px] flex-shrink-0"></i>
-    <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-      <div class="text-center md:text-left space-y-2">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Starter</h2>
-        <p class="text-gray-700 font-medium">Custom Subdomain, 1 Online Tunnel, <br> 10 connections/min</p>
-        <p class="text-gray-700 font-medium">For 28 days</p>
-        <p class="text-blue-600 font-medium">1 tunnel available</p>
-        <p class="text-gray-500 font-medium">4,999 API calls</p>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
-        <div class="text-4xl md:text-2xl font-extrabold text-gray-900">₹ 499.00</div>
-        <button class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
-          Buy Now
-        </button>
-      </div>
-    </div>
-  </div>
-</div><div class="mb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-  <div class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
-    <i class="fa-solid fa-user text-blue-600 text-[60px] flex-shrink-0"></i>
-    <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-      <div class="text-center md:text-left space-y-2">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Starter</h2>
-        <p class="text-gray-700 font-medium">Custom Subdomain, 1 Online Tunnel, <br> 10 connections/min</p>
-        <p class="text-gray-700 font-medium">For 28 days</p>
-        <p class="text-blue-600 font-medium">1 tunnel available</p>
-        <p class="text-gray-500 font-medium">4,999 API calls</p>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
-        <div class="text-4xl md:text-2xl font-extrabold text-gray-900">₹ 499.00</div>
-        <button class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
-          Buy Now
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
-    <i class="fa-solid fa-rocket text-yellow-500 text-[60px] flex-shrink-0"></i>
-   <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-      <div class="text-center md:text-left space-y-2">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Starter</h2>
-        <p class="text-gray-700 font-medium">Custom Subdomain, 1 Online Tunnel, <br> 10 connections/min</p>
-        <p class="text-gray-700 font-medium">For 28 days</p>
-        <p class="text-blue-600 font-medium">1 tunnel available</p>
-        <p class="text-gray-500 font-medium">4,999 API calls</p>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
-        <div class="text-4xl md:text-2xl font-extrabold text-gray-900">₹ 499.00</div>
-        <button class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
-          Buy Now
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
-    <i class="fa-solid fa-building text-green-600 text-[60px] flex-shrink-0"></i>
-    <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-      <div class="text-center md:text-left space-y-2">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Starter</h2>
-        <p class="text-gray-700 font-medium">Custom Subdomain, 1 Online Tunnel, <br> 10 connections/min</p>
-        <p class="text-gray-700 font-medium">For 28 days</p>
-        <p class="text-blue-600 font-medium">1 tunnel available</p>
-        <p class="text-gray-500 font-medium">4,999 API calls</p>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
-        <div class="text-4xl md:text-2xl font-extrabold text-gray-900">₹ 499.00</div>
-        <button class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
-          Buy Now
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="flex-1 bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all p-6 flex flex-col md:flex-row items-center gap-6">
-    <i class="fa-solid fa-briefcase text-purple-600 text-[60px] flex-shrink-0"></i>
-    <div class="flex-1 flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-      <div class="text-center md:text-left space-y-2">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Starter</h2>
-        <p class="text-gray-700 font-medium">Custom Subdomain, 1 Online Tunnel, <br> 10 connections/min</p>
-        <p class="text-gray-700 font-medium">For 28 days</p>
-        <p class="text-blue-600 font-medium">1 tunnel available</p>
-        <p class="text-gray-500 font-medium">4,999 API calls</p>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:gap-4 mt-4 md:mt-0">
-        <div class="text-4xl md:text-2xl font-extrabold text-gray-900">₹ 499.00</div>
-        <button class="px-5 py-1 bg-blue-600 text-white font-bold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-transform">
-          Buy Now
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-      
 
     </div>
   </div>
